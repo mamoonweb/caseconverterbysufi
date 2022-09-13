@@ -1,0 +1,109 @@
+body{
+  font-family: 'lato', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.custom-control {
+    padding-left: 78px;
+    text-transform: capitalize;
+}
+.custom-control-label::before {
+  width: 70px;
+  height: 25px;
+  top: 1px;
+  border-radius: 160px;
+}
+.custom-control-label::after {
+  width: 40px !important;
+  height: 103% !important;
+  top: 1px !important;
+  border-radius: 160px;
+  background: #007bff;
+  transform: translate(0px, 0px);
+  transition: 0.1s;
+  cursor: pointer;
+}
+.custom-control-input:checked~.custom-control-label::after {
+  width: 40px !important;
+  transition: 0.1s;
+  background: #007bff;
+  transform: translate(30px, 0px);
+  
+}
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  background-color: black;
+}
+
+.form-group {
+  position: relative;
+}
+
+.trash-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 65px;
+}
+.copy-icon {
+    position: absolute;
+    right: 60px;
+    bottom: 65px;
+}
+.info-icon{
+    position: absolute;
+    right: 108px;
+    bottom: 65px;
+}
+.case-head {
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.case-head-2 {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+p{
+  font-size: 16px;
+}
+
+nav {
+  border-bottom: 1px solid white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
